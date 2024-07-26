@@ -2,7 +2,7 @@ import os
 import filecmp
 
 def copy_file(file1, file2):
-    if not os.path.exists(file1):
+    if (not os.path.exists(file1)):
         print('File not exists:',file1)
     else:
         f1 = open(file1, 'r')

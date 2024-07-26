@@ -51,17 +51,12 @@ if __name__ == "__main__":
 #{'name':'prerna','age':15}
 #]
 
-def main():
-    dictioanary = [
-        {'name':'shreya','age':15},
-        {'name':'pratiksha','age':13},
-        {'name':'prerna','age':15}
-    ]
-    for i in range(len(dictioanary)):
-        for j in range(0,len(dictioanary)-i-1):
-            if dictioanary[j]['age'] > dictioanary[j+1]['age']:
-                dictioanary[j],dictioanary[j+1] = dictioanary[j+1],dictioanary[j]
-    print('Sorted by age:', dictioanary)
-
-if __name__ == '__main__':
-    main()
+persons=[
+{'name':'shreya','age':15},
+{'name':'pratiksha','age':13},
+{'name':'prerna','age':15}
+ 
+]
+sorted_list = sorted(persons, key=lambda val: val['age'] )
+print(sorted_list)
+    
